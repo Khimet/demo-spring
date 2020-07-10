@@ -1,0 +1,2 @@
+Filet-O-Fish;600
+BigMac;1500
