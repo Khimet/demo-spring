@@ -19,13 +19,13 @@ public class AppSpringJava {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 		
 		// définition des profils actifs
-		context.getEnvironment().setActiveProfiles("Fichier1", "Fichier2", "Memoire1", "Memoire2");
+		context.getEnvironment().setActiveProfiles("fichier", "V1");
 		context.register(AppConfig.class);
-		context.refresh();
+		//context.refresh();
 		
 		// récupération du bean Menu
-		Menu menu = context.getBean(Menu.class);
-		menu.afficher();
+		Menu menu1 = context.getBean(Menu.class);
+		menu1.afficher();
 		// fermeture du Scanner
 		context.getBean(Scanner.class).close();
 		// fermeture du contexte Spring

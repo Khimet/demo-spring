@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 @Service
-@Profile("Fichier1 & Memoire1")
+@Profile("V1")
 public class PlatServiceVersion1 implements IPlatService {
 
     private IPlatDao dao;

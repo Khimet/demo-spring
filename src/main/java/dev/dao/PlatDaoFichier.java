@@ -20,7 +20,7 @@ import static java.util.stream.Collectors.toList;
 
 @Repository
 @PropertySource("app.properties")
-@Profile("Fichier1 & Fichier2")
+@Profile("fichier")
 public class PlatDaoFichier implements IPlatDao {
 	
     private String fichierStockage;

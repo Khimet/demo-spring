@@ -1,2 +1,3 @@
 Filet-O-Fish;600
 BigMac;1500
+McChicken;57896

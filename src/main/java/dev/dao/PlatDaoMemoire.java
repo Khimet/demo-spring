@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 
 @Repository
-@Profile("Memoire1 & Mémoire2")
+@Profile("memoire")
 public class PlatDaoMemoire implements IPlatDao {
 	
     private List<Plat> listePlats = new ArrayList<>();
