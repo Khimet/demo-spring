@@ -13,7 +13,7 @@ import org.springframework.context.annotation.PropertySource;
  *
  */
 @Configuration
-@ComponentScan(basePackages = {"dev.ihm", "dev.service", "dev.dao"})
+@ComponentScan("dev")
 @PropertySource("app.properties")
 public class AppConfig {
 	
