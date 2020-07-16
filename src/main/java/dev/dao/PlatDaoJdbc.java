@@ -36,7 +36,10 @@ public class PlatDaoJdbc implements IPlatDao {
 
 	@Override
 	public void ajouterPlat(String nomPlat, Integer prixPlat) {
-		// TODO Auto-generated method stub
+		
+		Plat plat = new Plat(nomPlat, prixPlat);
+		
+		jdbcTemplate.update("INSERT INTO plat (nom, prix) VALUES (?,?)", plat.getNom(), plat.getPrixEnCentimesEuros());
 		
 	}
 	
