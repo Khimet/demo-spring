@@ -2,9 +2,26 @@ package dev.entite;
 
 import java.util.Objects;
 
-public class Plat {
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-    private String nom;
+@Entity
+@Table(name = "plat")
+public class Plat {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
+    private int id;
+	
+	@Column(name = "nom")
+	private String nom;
+	
+	@Column(name = "prix")
     private Integer prixEnCentimesEuros;
 
     public Plat() {
@@ -31,7 +48,21 @@ public class Plat {
         this.prixEnCentimesEuros = prixEnCentimesEuros;
     }
 
-    @Override
+    /** Getter
+	 * @return id
+	 */
+	public int getId() {
+		return id;
+	}
+
+	/** Setter
+	 * @param id id
+	 */
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	@Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
