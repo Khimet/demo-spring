@@ -12,6 +12,6 @@ import dev.config.JpaTestConfig;
 
 @SpringJUnitConfig(classes = {PlatDaoJpa.class, JpaTestConfig.class})
 @ActiveProfiles("jpa")
-public class PlatDaoJpaTest extends IPlatDaoTest {
+public class PlatDaoJpaIntegrationTest extends IPlatDaoIntegrationTest {
 
 }

@@ -13,7 +13,7 @@ import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
  *
  */
 @Configuration
-@Profile("jdbc")
+@Profile("jdbc | jpa")
 public class DataSourceH2TestConfig {
 	
 	@Bean

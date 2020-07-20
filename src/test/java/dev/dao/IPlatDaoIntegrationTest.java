@@ -19,7 +19,7 @@ import dev.entite.Plat;
  */
 // EMF + Gestion Tx + DataSource
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
-public abstract class IPlatDaoTest {
+public abstract class IPlatDaoIntegrationTest {
 	
 	private IPlatDao dao;
 	
